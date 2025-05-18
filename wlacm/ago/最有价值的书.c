@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main(){
+    double prices[16] = {
+        28.1,   // 计算机导论
+        54.5,   // 网页程序设计
+        46.6,   // 高等数学
+        37.1,   // 程序设计基础
+        38.0,   // 面向对象程序设计
+        46.7,   // 电子技术基础
+        70.7,   // 计算机网络
+        21.8,   // 工程数学
+        31.4,   // 离散数学
+        27.6,   // 数据结构与算法
+        39.3,   // 单片机原理与应用
+        37.1,   // 数据库技术       
+        56.7,   // 软件工程        
+        70.3,   // 编译原理       
+        72.7,   // 操作系统        
+        40.7    // 计算机组成原理
+    }; 
+    int arr[16];
+    int index = 0;
+    double max = -1.0;
+    for(int i = 0 ; i < 16 ; i++){
+        scanf("%d",&arr[i]);
+        if (prices[i] * (double)arr[i] > max ){
+            max = prices[i] * (double)arr[i];
+            index = i;
+        }
+    }
+    printf("%.1lf %d",prices[index],arr[index]);
+    return 0 ;
+}
