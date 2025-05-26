@@ -34,3 +34,6 @@ ehthumbs.db
 # Python 编译文件
 __pycache__/
 *.pyc
+
+#exe文件
+*.exe

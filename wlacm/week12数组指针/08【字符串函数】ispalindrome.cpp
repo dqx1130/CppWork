@@ -7,7 +7,7 @@ int main(){
     gets(s);
     if(ispalindrome(s)){
         printf("yes");
-    }else{
+    }else{  
         printf("no");
     }
 }
